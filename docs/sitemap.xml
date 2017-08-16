@@ -3,12 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.chann.kr/posts/migrate/</loc>
+    <lastmod>2017-08-17T08:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.chann.kr/</loc>
+    <lastmod>2017-08-17T08:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.chann.kr/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/posts/</loc>
+    <lastmod>2017-08-17T08:00:00+09:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,7 +1,7 @@
 ---
 title: "Migrating from legacy blog... Wait!"
 date: 2017-08-17T08:00:00+09:00
-draft: true
+draft: false
 aliases:
     - /posts/landing/
     - /landing/
