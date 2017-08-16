@@ -1,5 +1,5 @@
 # Site settings
-baseURL = "http://localhost"
+baseURL = "https://blog.chann.kr"
 #themesDir = "../.."
 publishDir = "./docs"
 languageCode = "ko-kr"
