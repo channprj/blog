@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://localhost/</loc>
+    <loc>https://blog.chann.kr/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost/categories/</loc>
+    <loc>https://blog.chann.kr/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>http://localhost/tags/</loc>
+    <loc>https://blog.chann.kr/tags/</loc>
     <priority>0</priority>
   </url>
   
