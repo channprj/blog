@@ -3,6 +3,7 @@ baseURL = "https://blog.chann.kr"
 #themesDir = "../.."
 publishDir = "./docs"
 languageCode = "ko-kr"
+defaultContentLanguage = "ko"
 title = "CHANN BLOG"
 theme = "cactus"
 # Enter your tracking code to enable Google Analytics
