@@ -8,142 +8,6 @@
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/commands/hugo/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_benchmark/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_check/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_check_ulimit/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_config/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_convert/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_convert_tojson/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_convert_totoml/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_convert_toyaml/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_env/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_gen/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_gen_autocomplete/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_gen_doc/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_gen_man/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_import/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_import_jekyll/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_list/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_list_drafts/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_list_expired/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_list_future/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_new/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_new_site/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_new_theme/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_server/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_undraft/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/commands/hugo_version/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/tags/blogging/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.chann.kr/</loc>
     <lastmod>2017-08-17T08:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -155,36 +19,6 @@
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/tags/development/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/categories/development/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/tags/fast/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/tags/go/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.chann.kr/hugodoc/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.chann.kr/posts/</loc>
     <lastmod>2017-08-17T08:00:00+09:00</lastmod>
     <priority>0</priority>
@@ -192,7 +26,6 @@
   
   <url>
     <loc>https://blog.chann.kr/tags/</loc>
-    <lastmod>2017-08-17T06:06:42+09:00</lastmod>
     <priority>0</priority>
   </url>
   

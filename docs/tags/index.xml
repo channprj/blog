@@ -6,46 +6,9 @@
     <description>Recent content in Tags on CHANN BLOG</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Thu, 17 Aug 2017 06:06:42 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Blogging</title>
-      <link>https://blog.chann.kr/tags/blogging/</link>
-      <pubDate>Thu, 17 Aug 2017 06:06:42 +0900</pubDate>
-      
-      <guid>https://blog.chann.kr/tags/blogging/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Development</title>
-      <link>https://blog.chann.kr/tags/development/</link>
-      <pubDate>Thu, 17 Aug 2017 06:06:42 +0900</pubDate>
-      
-      <guid>https://blog.chann.kr/tags/development/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Fast</title>
-      <link>https://blog.chann.kr/tags/fast/</link>
-      <pubDate>Thu, 17 Aug 2017 06:06:42 +0900</pubDate>
-      
-      <guid>https://blog.chann.kr/tags/fast/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Go</title>
-      <link>https://blog.chann.kr/tags/go/</link>
-      <pubDate>Thu, 17 Aug 2017 06:06:42 +0900</pubDate>
-      
-      <guid>https://blog.chann.kr/tags/go/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
