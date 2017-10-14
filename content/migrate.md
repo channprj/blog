@@ -4,8 +4,9 @@ slug: "test"
 date: 2017-08-17T08:00:00+09:00
 draft: false
 aliases:
-    - /posts/landing/
-    - /landing/
+    - /posts/migrate
+    - /migrate
+    - /landing
 ---
 
 # h1 Heading 8-)

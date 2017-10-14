@@ -82,7 +82,7 @@ category = "categories"
 tag = "tags"
 
 [permalinks]
-page = "/:slug/"
+page = "/:slug"
 
 [[menu.main]]
 name = "저장소"
