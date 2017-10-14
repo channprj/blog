@@ -1,4 +1,5 @@
 baseURL = "http://www.example.com"
+publishDir = "./docs"
 title = "Minimo"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
