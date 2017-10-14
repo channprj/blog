@@ -1,5 +1,6 @@
 ---
 title: "Migrating from legacy blog... Wait!"
+slug: "test"
 date: 2017-08-17T08:00:00+09:00
 draft: false
 aliases:
