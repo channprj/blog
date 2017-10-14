@@ -1,12 +1,12 @@
-baseURL = "http://www.example.com"
+baseURL = "https://blog.chann.kr"
 publishDir = "./docs"
-title = "Minimo"
+title = "CHANN's Dev Log"
 # for smart copyright line, leave this blank and check [params.copyright]
 copyright = ""
 
 theme = "minimo"
 
-disqusShortname = ""
+disqusShortname = "channprj"
 googleAnalytics = ""
 
 Paginate = 5
@@ -18,11 +18,11 @@ enableRobotsTXT = true # generate robots.txt
 pygmentsCodefences = true
 
 # Language Configuration
-defaultContentLanguage = "en"
+defaultContentLanguage = "ko"
 
 [params.info]
-description = "Minimalist theme for Hugo"
-title404 = "Nothing's here!"
+description = ""
+title404 = "404 Not Found"
 
 [params.assets]
 favicon = "favicon.ico"
@@ -95,7 +95,12 @@ hrefTargetBlank = true
 
 [languages]
 # edit this block for your own language
+
+[languages.ko]
 lang = "ko"
+languageName = "Korean"
+weight = 1
+
 [languages.en]
 lang = "en"
 languageName = "English"

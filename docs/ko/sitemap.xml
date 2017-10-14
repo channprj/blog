@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://blog.chann.kr/test/</loc>
+    <lastmod>2017-08-17T08:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/authors/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.chann.kr/en/authors/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.chann.kr/authors/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/</loc>
+    <lastmod>2017-08-17T08:00:00+09:00</lastmod>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.chann.kr/en/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.chann.kr/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/categories/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.chann.kr/en/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.chann.kr/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/</loc>
+    <priority>0</priority>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://blog.chann.kr/en/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="ko"
+                href="https://blog.chann.kr/tags/"
+                />
+  </url>
+  
+</urlset>

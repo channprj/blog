@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Minimo</title>
-    <link>http://www.example.com/</link>
-    <description>Recent content on Minimo</description>
+    <title>CHANN&#39;s Dev Log</title>
+    <link>https://blog.chann.kr/</link>
+    <description>Recent content on CHANN&#39;s Dev Log</description>
     <generator>Hugo -- gohugo.io</generator>
     <lastBuildDate>Thu, 17 Aug 2017 08:00:00 +0900</lastBuildDate>
     
-	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.chann.kr/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Migrating from legacy blog... Wait!</title>
-      <link>http://www.example.com/test/</link>
+      <link>https://blog.chann.kr/test/</link>
       <pubDate>Thu, 17 Aug 2017 08:00:00 +0900</pubDate>
       
-      <guid>http://www.example.com/test/</guid>
+      <guid>https://blog.chann.kr/test/</guid>
       <description>h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading Horizontal Rules Typographic replacements Enable typographer option to see result.
 &amp;copy; &amp;copy; &amp;reg; &amp;reg; &amp;trade; &amp;trade; (p) (P) +-
 test.. test&amp;hellip; test&amp;hellip;.. test?&amp;hellip;.. test!&amp;hellip;.
