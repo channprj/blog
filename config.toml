@@ -57,16 +57,24 @@ page = "" # Twitter page username
 titleSeparator = "•"
 
 [params.social]
-codepen = "MunifTanjim"
-email = "contact@example.com"
-facebook = "MunifTanjim"
-github = "MunifTanjim"
-instagram = "MunifTanjim"
-linkedin = "muniftanjim"
-twitter = "MunifTanjim"
+codepen = "channprj"
+email = "chann@chann.kr"
+facebook = "channprj"
+github = "channprj"
+instagram = "channprj"
+linkedin = "channprj"
+twitter = "channprj"
 
 [params.social.config]
-platforms = ["github","facebook","twitter","instagram","email","codepen","linkedin"]
+platforms = [
+    "github",
+    "facebook",
+    "twitter",
+    "instagram",
+    "email",
+    "codepen",
+    "linkedin"
+]
 
 [taxonomies]
 author = "authors"
@@ -77,16 +85,17 @@ tag = "tags"
 page = "/:slug/"
 
 [[menu.main]]
-name = "Repo"
+name = "저장소"
 weight = -10
 identifier = "repository"
-url = "https://github.com/MunifTanjim/minimo"
+url = "https://github.com/channprj/blog"
 
 [blackfriday]
 hrefTargetBlank = true
 
 [languages]
 # edit this block for your own language
+lang = "ko"
 [languages.en]
 lang = "en"
 languageName = "English"
