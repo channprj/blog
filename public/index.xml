@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minimo</title>
+    <link>http://www.example.com/</link>
+    <description>Recent content on Minimo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 17 Aug 2017 08:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="http://www.example.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Migrating from legacy blog... Wait!</title>
+      <link>http://www.example.com/test/</link>
+      <pubDate>Thu, 17 Aug 2017 08:00:00 +0900</pubDate>
+      
+      <guid>http://www.example.com/test/</guid>
+      <description>h1 Heading 8-) h2 Heading h3 Heading h4 Heading h5 Heading h6 Heading Horizontal Rules Typographic replacements Enable typographer option to see result.
+&amp;copy; &amp;copy; &amp;reg; &amp;reg; &amp;trade; &amp;trade; (p) (P) +-
+test.. test&amp;hellip; test&amp;hellip;.. test?&amp;hellip;.. test!&amp;hellip;.
+!!!!!! ???? ,, &amp;ndash; &amp;mdash;
+&amp;ldquo;Smartypants, double quotes&amp;rdquo; and &amp;lsquo;single quotes&amp;rsquo;
+Emphasis This is bold text
+This is bold text
+This is italic text
+This is italic text
+Strikethrough
+Blockquotes  Blockquotes can also be nested&amp;hellip; &amp;gt; &amp;hellip;by using additional greater-than signs right next to each other&amp;hellip; &amp;gt; &amp;gt; &amp;hellip;or with spaces between arrows.</description>
+    </item>
+    
+  </channel>
+</rss>
