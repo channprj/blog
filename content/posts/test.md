@@ -1,10 +1,11 @@
 ---
-title: "About"
-slug: "about"
+title: "블로그 이사중"
+slug: "blog-migration"
 date: 2099-12-31T23:59:59+09:00
 draft: false
-# aliases:
-#     - /about
+aliases:
+    - /blog-migration
+    - /test
 ---
 
 블로그 마이그레이션 중입니다.<br>

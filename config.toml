@@ -1,107 +1,37 @@
-baseURL = "https://blog.chann.kr"
-publishDir = "./docs"
-title = "CHANN's Dev Log"
-# for smart copyright line, leave this blank and check [params.copyright]
-copyright = ""
-
-theme = "minimo"
-
-disqusShortname = "channprj"
+baseurl = "https://blog.chann.kr/"
+languageCode = "ko-kr"
+theme = "skeleton"
+disqusShortname = ""
 googleAnalytics = ""
 
-Paginate = 5
-preserveTaxonomyNames = true
-
-enableRobotsTXT = true # generate robots.txt
-
-# Syntax Highlighting ( https://gohugo.io/content-management/syntax-highlighting/ )
-pygmentsCodefences = true
-
-# Language Configuration
-defaultContentLanguage = "ko"
-
-[params.info]
-description = ""
-title404 = "404 Not Found"
-
-[params.assets]
-favicon = "favicon.ico"
-customCSS = ["css/custom.css"]
-customJS = ["js/custom.js"]
-gopher = "" # used in 404 template ( Generator: https://gopherize.me )
-
-[params.copyright]
-prefix = ""
-holder = "CHANN"
-startYear = "2017"
-suffix = ""
-
-[params.settings]
-# date & time format: https://golang.org/pkg/time/
-dateFormat = "2006, Jan 02"
-listDateFormat = "2006, Jan 02"
-hideEntryNavigation = ["page"] # boolean / array of sections
-hideSocialMenu = false
-showReadingTime = true
-
-[params.opengraph.facebook]
-admins = [] # array of Facebook IDs
-appID = ""
-pageID = ""
-
-[params.opengraph.twitter]
-page = "" # Twitter page username
-
-[params.seo]
-# Title Separator: - – — · • * ⋆ | ~ « » < >
-titleSeparator = "•"
-
-[params.social]
-codepen = "channprj"
-email = "chann@chann.kr"
-facebook = "channprj"
-github = "channprj"
-instagram = "channprj"
-linkedin = "channprj"
-twitter = "channprj"
-
-[params.social.config]
-platforms = [
-    "github",
-    "facebook",
-    "twitter",
-    "instagram",
-    "email",
-    "codepen",
-    "linkedin"
-]
-
 [taxonomies]
-author = "authors"
-category = "categories"
 tag = "tags"
+category = "categories"
 
-[permalinks]
-page = "/:slug"
+[params]
+title = "CHANN Blog"
+description = "External Memory Storage"
+author = "Heechan Bak"
+bio = "Developer"
+keywords = ["test 1", "test 2", "test 3"]
+sharingIcon = true
 
-[[menu.main]]
-name = "저장소"
-weight = -10
-identifier = "repository"
-url = "https://github.com/channprj/blog"
+[params.highlight]
+style = "github"
+languages = ["go", "py", "js", "bash", "dockerfile"]
 
-[blackfriday]
-hrefTargetBlank = true
+[[params.github]]
+url = "https://github.com/channprj"
+faIcon = "fa-github"
 
-[languages]
-# edit this block for your own language
+[[params.twitter]]
+url = "https://twitter.com/channprj"
+faIcon = "fa-twitter"
 
-[languages.ko]
-lang = "ko"
-languageName = "Korean"
-weight = 1
+[[params.linkedin]]
+url = "https://linkedin.com/in/channprj"
+faIcon = "fa-linkedin-square"
 
-[languages.en]
-lang = "en"
-languageName = "English"
-weight = 1
+[[params.rss]]
+url = "/index.xml"
+faIcon = "fa-rss"
