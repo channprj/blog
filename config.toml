@@ -1,37 +1,61 @@
-baseurl = "https://blog.chann.kr/"
-languageCode = "ko-kr"
+baseurl = "https://blog.chann.kr"
+languageCode = "ko"
 theme = "skeleton"
+title = "External Memory Storage"
+copyright = "&copy; CHANN"
 disqusShortname = ""
 googleAnalytics = ""
+paginate = 2
+paginatePath = "page"
+publishDir = "docs"
+enableRobotsTXT = true
+metaDataFormat = "toml"
+
+[author]
+    name = "CHANN"
+    description = "Developer who code python, golang, js"
+    email = "chann@chann.kr"
+
+
+[permalinks]
+    post = ":slug"
+
+
+[assets]
+    customJS = ["js/custom.js"]
+    customCSS = ["css/custom.css"]
+
+
+[params.opengraph.facebook]
+    admins = []  # array of Facebook IDs
+    appID = ""
+    pageID = ""
+
+
+[params.social]
+    twitter = "channprj"
+    github = "channprj"
+    email = "chann@chann.kr"
+    linkedin = "channprj"
+    facebook = "channprj"
+    instagram = "channprj"
+    codepen = "channprj"
+
 
 [taxonomies]
-tag = "tags"
-category = "categories"
+    category ="categories"
+    tag ="tags"
 
-[params]
-title = "CHANN Blog"
-description = "External Memory Storage"
-author = "Heechan Bak"
-bio = "Developer"
-keywords = ["test 1", "test 2", "test 3"]
-sharingIcon = true
 
-[params.highlight]
-style = "github"
-languages = ["go", "py", "js", "bash", "dockerfile"]
-
-[[params.github]]
-url = "https://github.com/channprj"
-faIcon = "fa-github"
-
-[[params.twitter]]
-url = "https://twitter.com/channprj"
-faIcon = "fa-twitter"
-
-[[params.linkedin]]
-url = "https://linkedin.com/in/channprj"
-faIcon = "fa-linkedin-square"
-
-[[params.rss]]
-url = "/index.xml"
-faIcon = "fa-rss"
+[[menu.main]]
+    name = "About"
+    weight = -110
+    pre = "<i class='fa fa-heart'></i>"
+    identifier = "about"
+    url = "/about/"
+[[menu.main]]
+    name = "Posts"
+    weight = -100
+    pre = "<i class='fa fa-paper'></i>"
+    identifier = "post"
+    url = "/post/"

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "ko-kr" }}">
+<head>
+{{ partial "head.html" . }}
+</head>
+<body>
+	<header>
+		<a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+		<nav>
+			<ul>
+				{{ range .Site.Menus.main }}
+				<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+				{{ end }}
+			</ul>
+		</nav>
+	</header>

@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>{{ .Title }} &mdash; {{ .Site.Author.name }}</title>
+{{ if .Author -}}
+    <meta name="author" content="{{ .Site.Author.name }}">
+{{- end }}
+{{ if .Description -}}
+    <meta name="description" content="{{ .Description }}">
+{{- end }}
+{{ if .RSSLink -}}
+    <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}">
+{{- end }}
+{{ .Hugo.Generator }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/custom.css">
