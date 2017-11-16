@@ -1,4 +1,5 @@
 +++
+type = "post"
 title = "Creating a New Theme"
 description = "make theme your own"
 tags = [

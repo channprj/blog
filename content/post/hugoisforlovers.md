@@ -1,4 +1,5 @@
 +++
+type = "post"
 title = "Getting Started with Hugo"
 description = ""
 tags = [

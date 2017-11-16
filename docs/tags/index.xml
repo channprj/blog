@@ -5,11 +5,9 @@
     <link>https://blog.chann.kr/tags/</link>
     <description>Recent content in Tags on External Memory Storage</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko</language>
-    <managingEditor>chann@chann.kr (CHANN)</managingEditor>
-    <webMaster>chann@chann.kr (CHANN)</webMaster>
-    <copyright>&amp;copy; CHANN</copyright>
-    <lastBuildDate>Wed, 15 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <language>ko-kr</language>
+    <copyright>CHANN</copyright>
+    <lastBuildDate>Thu, 16 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -17,45 +15,9 @@
     <item>
       <title></title>
       <link>https://blog.chann.kr/tags/</link>
-      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
+      <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
+      
       <guid>https://blog.chann.kr/tags/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>A</title>
-      <link>https://blog.chann.kr/tags/a/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
-      <guid>https://blog.chann.kr/tags/a/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>B</title>
-      <link>https://blog.chann.kr/tags/b/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
-      <guid>https://blog.chann.kr/tags/b/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>C</title>
-      <link>https://blog.chann.kr/tags/c/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
-      <guid>https://blog.chann.kr/tags/c/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>D</title>
-      <link>https://blog.chann.kr/tags/d/</link>
-      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
-      <guid>https://blog.chann.kr/tags/d/</guid>
       <description></description>
     </item>
     
@@ -63,7 +25,7 @@
       <title>Development</title>
       <link>https://blog.chann.kr/tags/development/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
+      
       <guid>https://blog.chann.kr/tags/development/</guid>
       <description></description>
     </item>
@@ -72,7 +34,7 @@
       <title>Go</title>
       <link>https://blog.chann.kr/tags/go/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
+      
       <guid>https://blog.chann.kr/tags/go/</guid>
       <description></description>
     </item>
@@ -81,7 +43,7 @@
       <title>Golang</title>
       <link>https://blog.chann.kr/tags/golang/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
+      
       <guid>https://blog.chann.kr/tags/golang/</guid>
       <description></description>
     </item>
@@ -90,7 +52,7 @@
       <title>Hugo</title>
       <link>https://blog.chann.kr/tags/hugo/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
+      
       <guid>https://blog.chann.kr/tags/hugo/</guid>
       <description></description>
     </item>
@@ -99,7 +61,7 @@
       <title>Templates</title>
       <link>https://blog.chann.kr/tags/templates/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
+      
       <guid>https://blog.chann.kr/tags/templates/</guid>
       <description></description>
     </item>
@@ -108,7 +70,7 @@
       <title>Themes</title>
       <link>https://blog.chann.kr/tags/themes/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
+      
       <guid>https://blog.chann.kr/tags/themes/</guid>
       <description></description>
     </item>

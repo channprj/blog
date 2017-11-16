@@ -5,10 +5,8 @@
     <link>https://blog.chann.kr/tags/hugo/</link>
     <description>Recent content in Hugo on External Memory Storage</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ko</language>
-    <managingEditor>chann@chann.kr (CHANN)</managingEditor>
-    <webMaster>chann@chann.kr (CHANN)</webMaster>
-    <copyright>&amp;copy; CHANN</copyright>
+    <language>ko-kr</language>
+    <copyright>CHANN</copyright>
     <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
@@ -16,10 +14,10 @@
     
     <item>
       <title>Getting Started with Hugo</title>
-      <link>https://blog.chann.kr/getting-started-with-hugo/</link>
+      <link>https://blog.chann.kr/post/hugoisforlovers/</link>
       <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      <author>chann@chann.kr (CHANN)</author>
-      <guid>https://blog.chann.kr/getting-started-with-hugo/</guid>
+      
+      <guid>https://blog.chann.kr/post/hugoisforlovers/</guid>
       <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
 Save it somewhere specific as we will be using it in the next step.
 More complete instructions are available at installing hugo

@@ -1,61 +1,89 @@
-baseurl = "https://blog.chann.kr"
-languageCode = "ko"
-theme = "skeleton"
+baseurl = "https://blog.chann.kr/"
+languageCode = "ko-kr"
 title = "External Memory Storage"
-copyright = "&copy; CHANN"
-disqusShortname = ""
+theme = "hugo-material-docs"
+metaDataFormat = "toml"
+canonifyurls = true
 googleAnalytics = ""
-paginate = 2
-paginatePath = "page"
+disqusShortname = ""
+
+
+# Custom Option
 publishDir = "docs"
 enableRobotsTXT = true
-metaDataFormat = "toml"
-
-[author]
-    name = "CHANN"
-    description = "Developer who code python, golang, js"
-    email = "chann@chann.kr"
+paginate = 5
+PaginatePath = "page"
 
 
-[permalinks]
-    post = ":slug"
+[params]
+    # General information
+    author = "CHANN"
+    description = "Junior Developer"
+    copyright = "CHANN"
+
+    # Repository
+    # provider = "GitHub"
+    # repo_url = "https://github.com/channprj/blog"
+
+    version = "1.0.0"
+    logo = "img/profile.jpg"
+    favicon = ""
+
+    permalink = "#"
+
+    # Custom assets
+    custom_css = []
+    custom_js  = []
+
+    # Syntax highlighting theme
+    highlight_css  = ""
+
+    [params.palette]
+        primary = "indigo"
+        accent  = "deep-purple"
+
+    [params.font]
+        text = "Roboto"
+        code = "Roboto Mono"
 
 
-[assets]
-    customJS = ["js/custom.js"]
-    customCSS = ["css/custom.css"]
-
-
-[params.opengraph.facebook]
-    admins = []  # array of Facebook IDs
-    appID = ""
-    pageID = ""
-
-
-[params.social]
+[social]
     twitter = "channprj"
-    github = "channprj"
-    email = "chann@chann.kr"
-    linkedin = "channprj"
     facebook = "channprj"
-    instagram = "channprj"
-    codepen = "channprj"
-
-
-[taxonomies]
-    category ="categories"
-    tag ="tags"
+    linkedin = "channprj"
+    behance = "channprj"
+    github  = "channprj"
+    # email   = "chann@chann.kr"
 
 
 [[menu.main]]
-    name = "About"
-    weight = -110
-    pre = "<i class='fa fa-heart'></i>"
-    identifier = "about"
-    url = "/about/"
+    name   = "Home"
+    url    = "/"
+    weight = -10
+
 [[menu.main]]
-    name = "Posts"
-    weight = -100
-    pre = "<i class='fa fa-paper'></i>"
-    identifier = "post"
-    url = "/post/"
+    name   = "About"
+    url    = "about/"
+    weight = 10
+
+[[menu.main]]
+    name   = "Posts"
+    url    = "post/"
+    weight = 20
+
+[[menu.main]]
+    name   = "Projects"
+    url    = "projects/"
+    weight = 30
+
+# [[menu.main]]
+#     name   = "License"
+#     url    = "license/"
+#     weight = 40
+
+
+[blackfriday]
+    smartypants	= true
+    fractions = true
+    smartDashes = true
+    plainIDAnchors = true

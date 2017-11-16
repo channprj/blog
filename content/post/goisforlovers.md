@@ -1,4 +1,5 @@
 +++
+type = "post"
 title = "(Hu)go Template Primer"
 description = ""
 tags = [
