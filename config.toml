@@ -4,8 +4,8 @@ title = "External Memory Storage"
 theme = "hugo-material-blog"
 metaDataFormat = "toml"
 canonifyurls = true
-googleAnalytics = ""
-disqusShortname = ""
+googleAnalytics = "UA-65628430-3"
+disqusShortname = "channprj"
 
 
 # Custom Option
