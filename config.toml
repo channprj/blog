@@ -1,7 +1,7 @@
 baseurl = "https://blog.chann.kr/"
 languageCode = "ko-kr"
 title = "External Memory Storage"
-theme = "hugo-material-docs"
+theme = "hugo-material-blog"
 metaDataFormat = "toml"
 canonifyurls = true
 googleAnalytics = ""
