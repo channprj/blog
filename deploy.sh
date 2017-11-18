@@ -1,6 +1,5 @@
 #!/bin/bash
-rm -rf docs
-rm -rf public
+rm -rf docs/ public/
 hugo
 echo "blog.chann.kr" > docs/CNAME
 
