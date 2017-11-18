@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>External Memory Storage</title>
+    <title>Categories on External Memory Storage</title>
     <link>https://blog.chann.kr/categories/</link>
-    <description>Recent content on External Memory Storage</description>
+    <description>Recent content in Categories on External Memory Storage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>CHANN</copyright>
@@ -13,23 +13,39 @@
     
     
     <item>
-      <title>About</title>
-      <link>https://blog.chann.kr/about/</link>
+      <title></title>
+      <link>https://blog.chann.kr/categories/</link>
       <pubDate>Thu, 16 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/about/</guid>
-      <description>TEST
- 마이그레이션중입니다.
-하&amp;hellip; 아직 한참 남았어요&amp;hellip;</description>
+      <guid>https://blog.chann.kr/categories/</guid>
+      <description></description>
     </item>
     
     <item>
-      <title>Test</title>
-      <link>https://blog.chann.kr/post/test/</link>
-      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
+      <title>Development</title>
+      <link>https://blog.chann.kr/categories/development/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/post/test/</guid>
-      <description>asdkjflkasdjflkasdjflk</description>
+      <guid>https://blog.chann.kr/categories/development/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://blog.chann.kr/categories/golang/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/categories/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Theme</title>
+      <link>https://blog.chann.kr/categories/theme/</link>
+      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/categories/theme/</guid>
+      <description></description>
     </item>
     
   </channel>
