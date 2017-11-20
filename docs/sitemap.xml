@@ -38,14 +38,14 @@
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/tags/</loc>
-    <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+    <loc>https://blog.chann.kr/categories/</loc>
+    <lastmod>2017-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/categories/</loc>
-    <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+    <loc>https://blog.chann.kr/tags/</loc>
+    <lastmod>2017-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -54,19 +54,31 @@
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/categories/</loc>
+    <loc>https://blog.chann.kr/categories/about/</loc>
     <lastmod>2017-11-16T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/tags/development/</loc>
-    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <loc>https://blog.chann.kr/tags/about/</loc>
+    <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/categories/</loc>
+    <lastmod>2017-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.chann.kr/categories/development/</loc>
+    <lastmod>2014-04-02T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/development/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -84,13 +96,13 @@
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/tags/golang/</loc>
+    <loc>https://blog.chann.kr/categories/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/categories/golang/</loc>
+    <loc>https://blog.chann.kr/tags/golang/</loc>
     <lastmod>2014-04-02T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -109,7 +121,7 @@
   
   <url>
     <loc>https://blog.chann.kr/tags/</loc>
-    <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2017-11-15T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
