@@ -166,7 +166,7 @@ h6 {
 }
 
 pre {
-    background: rgba(0, 0, 0, .05)
+    background: #eee;
 }
 
 pre,
@@ -829,7 +829,7 @@ pre span {
 }
 
 .article code {
-    /* background: #eee */
+    background: #eee
 }
 
 .article kbd {
@@ -1019,15 +1019,16 @@ h1 .article .headerlink {
     float: left;
     font-family: Icon;
     font-size: 16px;
-    width: 1.2em;
     margin-left: -1.2em;
-    vertical-align: -.1em
+    vertical-align: -.1em;
+    width: 1.2em;
 }
 
 .article p>code {
+    background-color: #eee;
+    border-radius: 4px;
+    padding: 2px 8px;
     white-space: nowrap;
-    padding: 2px 4px;
-    background-color: #ccc;
 }
 
 .article kbd {
