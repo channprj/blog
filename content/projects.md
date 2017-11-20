@@ -1,6 +1,6 @@
 +++
 title = "Projects"
-description = "프로젝트를 설명합니다"
+description = "저의 개인 프로젝트를 설명합니다"
 date = "2017-11-17"
 slug = "projects"
 aliases = [
@@ -9,7 +9,9 @@ aliases = [
 draft = false
 +++
 
-# 프로젝트
-> WIP
+<div class="github-card" data-github="channprj" data-width="400" data-height="150" data-theme="default"></div>
+<script src="//cdn.jsdelivr.net/github-cards/latest/widget.js"></script>
 
-프로젝트를 적으면 된다.
+개인 프로젝트를 설명합니다.
+
+> 작성중입니다.
