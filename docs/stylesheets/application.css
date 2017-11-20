@@ -1026,7 +1026,8 @@ h1 .article .headerlink {
 
 .article p>code {
     white-space: nowrap;
-    padding: 2px 4px
+    padding: 2px 4px;
+    background-color: #ccc;
 }
 
 .article kbd {
