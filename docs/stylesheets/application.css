@@ -1026,8 +1026,8 @@ h1 .article .headerlink {
 
 .article p>code {
     background-color: #eee;
-    border-radius: 4px;
-    padding: 2px 8px;
+    border-radius: 2px;
+    padding: 0px 6px;
     white-space: nowrap;
 }
 

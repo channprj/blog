@@ -22,56 +22,74 @@
     </item>
     
     <item>
-      <title>Development</title>
-      <link>https://blog.chann.kr/tags/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Blog</title>
+      <link>https://blog.chann.kr/tags/blog/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/tags/development/</guid>
+      <guid>https://blog.chann.kr/tags/blog/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Go</title>
-      <link>https://blog.chann.kr/tags/go/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Dev</title>
+      <link>https://blog.chann.kr/tags/dev/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/tags/go/</guid>
+      <guid>https://blog.chann.kr/tags/dev/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://blog.chann.kr/tags/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Gatsbyjs</title>
+      <link>https://blog.chann.kr/tags/gatsbyjs/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/tags/golang/</guid>
+      <guid>https://blog.chann.kr/tags/gatsbyjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ghost</title>
+      <link>https://blog.chann.kr/tags/ghost/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/ghost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hexo</title>
+      <link>https://blog.chann.kr/tags/hexo/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/hexo/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hugo</title>
       <link>https://blog.chann.kr/tags/hugo/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.chann.kr/tags/hugo/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Templates</title>
-      <link>https://blog.chann.kr/tags/templates/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Jekyll</title>
+      <link>https://blog.chann.kr/tags/jekyll/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/tags/templates/</guid>
+      <guid>https://blog.chann.kr/tags/jekyll/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Themes</title>
-      <link>https://blog.chann.kr/tags/themes/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Pelican</title>
+      <link>https://blog.chann.kr/tags/pelican/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/tags/themes/</guid>
+      <guid>https://blog.chann.kr/tags/pelican/</guid>
       <description></description>
     </item>
     

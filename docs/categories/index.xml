@@ -7,19 +7,10 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>CHANN</copyright>
-    <lastBuildDate>Wed, 15 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title></title>
-      <link>https://blog.chann.kr/categories/</link>
-      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.chann.kr/categories/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>About</title>
@@ -31,29 +22,29 @@
     </item>
     
     <item>
-      <title>Development</title>
-      <link>https://blog.chann.kr/categories/development/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Blog</title>
+      <link>https://blog.chann.kr/categories/blog/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/categories/development/</guid>
+      <guid>https://blog.chann.kr/categories/blog/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Golang</title>
-      <link>https://blog.chann.kr/categories/golang/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Dev</title>
+      <link>https://blog.chann.kr/categories/dev/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/categories/golang/</guid>
+      <guid>https://blog.chann.kr/categories/dev/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Theme</title>
-      <link>https://blog.chann.kr/categories/theme/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>Life</title>
+      <link>https://blog.chann.kr/categories/life/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/categories/theme/</guid>
+      <guid>https://blog.chann.kr/categories/life/</guid>
       <description></description>
     </item>
     

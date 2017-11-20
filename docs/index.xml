@@ -7,10 +7,20 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>CHANN</copyright>
-    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>블로그 이사</title>
+      <link>https://blog.chann.kr/post/migrate-blog/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/post/migrate-blog/</guid>
+      <description>이번 가을에 개인적으로 사용하던 AWS 계정을 정리하게 되었다. 그 동안 여기저기서 크레딧을 지원받아 잘 사용하고 있었지만 아무래도 개인적으로 돈을 내고 쓰자니 조금 부담이 되었다. 굳이 개인 블로그를 위해 서버를 운영하는 것 또한 피곤하기도 했다. 고민을 하다보니 Github Pages 를 활용하는 것으로 생각이 좁혀졌고, 다시 정적 페이지 생성기들을 한번 두루 써봤다.
+서비스형 블로그 사용도 잠시 고민했지만, 여러 Pain Point 들을 극복해서 참고 쓸 자신이 생기지 않았다. Medium 이 그나마 가장 나았는데, 여긴 한글폰트가 구리고 이걸 내가 어떻게 바꿔서 쓸 수가 없다.</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -19,8 +29,7 @@
       
       <guid>https://blog.chann.kr/about/</guid>
       <description>박희찬은 서울에 사는 개발자로 평소에 코드, 사진, 글, 디자인 등을 생산합니다. 취미로 자전거를 타거나 영화와 드라마를 봅니다. 가끔 트위터에서 실없는 이야기를 하거나 인스타그램에서 먹은 음식 자랑을 합니다.
-10살에 가짜 문상 제조기를 만든 것을 시작으로 프로그래밍에 입문했습니다. 대학교에서는 컴퓨터와 뇌인지과학을 전공하였고, 서버 개발 및 운영을 조금 할 줄 압니다. 요즘에는 주로 Python, Golang, Javascript 로 개발을 하고 있습니다. 게으른 탓에 자동화에도 관심이 많습니다.
-최근에는 생존을 위해 틈틈이 파트타임 코딩 노동을 하고 있습니다.</description>
+밀레니엄이 되던 10살에 가짜 문상 제조기를 만든 것을 시작으로 프로그래밍에 입문했습니다. 대학교에서는 컴퓨터와 뇌인지과학을 전공하였고, 서버 개발 및 운영을 조금 할 줄 압니다. 요즘에는 주로 Python, Golang, Javascript 를 주력 언어로 개발을 하고 있습니다. 게으른 탓에 자동화에도 관심이 많습니다. 그래서 Docker, Orchestration, Devops 관련 도구들도 좋아합니다.</description>
     </item>
     
     <item>
@@ -44,49 +53,6 @@
       <description>이게 메인페이지인데  WIP
  글 목록을 바로 보여주는 게 나을지, 따로 떼어놓는 게 나을지 고민중.
 H3 테스트 H4 테스트 H5 테스트 H6 테스트 표 테스트    Degree Description     Beginner Getting started and still need support from others   Basic Can read and write code, but not yet comfortable   Intermediate Fairly comfortable, though at times need to reference Google or Stack Overflow   Advanced Able to teach or advise others   Expert I can do everything what I want    잘 그려지니&amp;hellip;?</description>
-    </item>
-    
-    <item>
-      <title>Test</title>
-      <link>https://blog.chann.kr/post/test/</link>
-      <pubDate>Wed, 15 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.chann.kr/post/test/</guid>
-      <description>asdkjflkasdjflkasdjflk</description>
-    </item>
-    
-    <item>
-      <title>(Hu)go Template Primer</title>
-      <link>https://blog.chann.kr/post/goisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.chann.kr/post/goisforlovers/</guid>
-      <description>Hugo uses the excellent go html/template library for its template engine. It is an extremely lightweight engine that provides a very small amount of logic. In our experience that it is just the right amount of logic to be able to create a good static website. If you have used other template systems from different languages or frameworks you will find a lot of similarities in go templates.
-This document is a brief primer on using go templates.</description>
-    </item>
-    
-    <item>
-      <title>Creating a New Theme</title>
-      <link>https://blog.chann.kr/post/creating-a-new-theme/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.chann.kr/post/creating-a-new-theme/</guid>
-      <description>Introduction This tutorial will show you how to create a simple theme in Hugo. I assume that you are familiar with HTML, the bash command line, and that you are comfortable using Markdown to format content. I&amp;rsquo;ll explain how Hugo uses templates and how you can organize your templates to create a theme. I won&amp;rsquo;t cover using CSS to style your theme.
-We&amp;rsquo;ll start with creating a new site with a very basic template.</description>
-    </item>
-    
-    <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://blog.chann.kr/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.chann.kr/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
     </item>
     
     <item>

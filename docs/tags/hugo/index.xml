@@ -7,23 +7,19 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>CHANN</copyright>
-    <lastBuildDate>Wed, 02 Apr 2014 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 20 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Getting Started with Hugo</title>
-      <link>https://blog.chann.kr/post/hugoisforlovers/</link>
-      <pubDate>Wed, 02 Apr 2014 00:00:00 +0000</pubDate>
+      <title>블로그 이사</title>
+      <link>https://blog.chann.kr/post/migrate-blog/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://blog.chann.kr/post/hugoisforlovers/</guid>
-      <description>Step 1. Install Hugo Goto hugo releases and download the appropriate version for your os and architecture.
-Save it somewhere specific as we will be using it in the next step.
-More complete instructions are available at installing hugo
-Step 2. Build the Docs Hugo has its own example site which happens to also be the documentation site you are reading right now.
-Follow the following steps:
- Clone the hugo repository Go into the repo Run hugo in server mode and build the docs Open your browser to http://localhost:1313  Corresponding pseudo commands:</description>
+      <guid>https://blog.chann.kr/post/migrate-blog/</guid>
+      <description>이번 가을에 개인적으로 사용하던 AWS 계정을 정리하게 되었다. 그 동안 여기저기서 크레딧을 지원받아 잘 사용하고 있었지만 아무래도 개인적으로 돈을 내고 쓰자니 조금 부담이 되었다. 굳이 개인 블로그를 위해 서버를 운영하는 것 또한 피곤하기도 했다. 고민을 하다보니 Github Pages 를 활용하는 것으로 생각이 좁혀졌고, 다시 정적 페이지 생성기들을 한번 두루 써봤다.
+서비스형 블로그 사용도 잠시 고민했지만, 여러 Pain Point 들을 극복해서 참고 쓸 자신이 생기지 않았다. Medium 이 그나마 가장 나았는데, 여긴 한글폰트가 구리고 이걸 내가 어떻게 바꿔서 쓸 수가 없다.</description>
     </item>
     
   </channel>
