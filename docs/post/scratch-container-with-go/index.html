@@ -359,7 +359,7 @@ func main() {
 }
 </code></pre>
 
-<p>이제 빌드를 해야 한다. <code>CGO_ENABLED</code> 환경변수를 <strong>0</strong> 으로 설정해서 cgo 가 아닌 Go 컴파일러를 사용하도록 해야 한다. <code>-a</code> Flag 는 Go 에 모든 종속성을 다시 빌드하도록 한다. 그렇지 않으면 여전히 동적으로 연결된 종속성을 가지기 때문이다. 마지막으로 Linker 와 관련하여 <code>-ldflags '-s'</code> 와 같이 빌드 옵션을 부여해서 실행 파일의 크기를 약 50% 줄이는 것이 좋다.<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
+<p>이제 빌드를 해야 한다. <code>CGO_ENABLED</code> 환경변수를 <strong>0</strong> 으로 설정해서 cgo 가 아닌 Go 컴파일러를 사용하도록 해야 한다. <code>-a</code> Flag 는 Go 에 모든 종속성을 다시 빌드하도록 한다. 그렇지 않으면 여전히 동적으로 연결된 종속성을 가지기 때문이다. 마지막으로 Linker 와 관련하여 <code>-ldflags '-s'</code> 와 같이 빌드 옵션을 부여해서 실행 파일의 크기를 줄이는 것이 좋다.<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
 
 <blockquote>
 <p>이 글은 Macbook Pro Touchbar &lsquo;15 (Late 2016), macOS High Sierra 기준으로 작성되었으며, 어쩌면 환경에 따라서 GOARCH 와 같은 Flag 값이 조금 달라질 수도 있다.</p>
@@ -423,7 +423,7 @@ go-scratch-container   latest              1e22d9716622        34 seconds ago   
 <ol>
 <li id="fn:1">물론 외부 의존성 패키지로 인한 예외가 있을 수 있다.
  <a class="footnote-return" href="#fnref:1">↩</a></li>
-<li id="fn:2">심볼 테이블 제거 등 결과물을 작게 만든다. <code>man ld</code> 로 검색해서 보면 Obsolete 되었다고 나오긴 하지만 Go 빌드 옵션에서는 여전히 유효한 것 같다.
+<li id="fn:2">심볼 테이블 제거 등 결과물을 작게 만든다. <code>man ld</code> 로 검색해서 보면 <code>-s</code> 옵션이 Obsolete 되었다고 나오긴 하지만 Go 빌드 옵션에서는 여전히 유효한 것 같다.
  <a class="footnote-return" href="#fnref:2">↩</a></li>
 <li id="fn:3">회사에서 무언가 설득이 필요할 때 비용절감 이슈는 큰 힘이 된다.
  <a class="footnote-return" href="#fnref:3">↩</a></li>
