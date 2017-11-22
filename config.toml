@@ -40,7 +40,7 @@ PaginatePath = "page"
     highlight_css  = ""
 
     [params.palette]
-        primary = "indigo"
+        primary = ""
         accent  = "deep-purple"
 
     [params.font]

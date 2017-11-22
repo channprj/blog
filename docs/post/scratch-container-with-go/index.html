@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="ko-kr">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>작고 가벼운 Go Docker 컨테이너 띄우기 - External Memory Storage</title>
+    <meta name="generator" content="Hugo 0.30.2" />
+
+    
+    <meta name="description" content="Junior Developer">
+    
+    <link rel="canonical" href="https://blog.chann.kr/post/scratch-container-with-go/">
+    
+    <meta name="author" content="CHANN">
+    
+
+    <meta property="og:url" content="https://blog.chann.kr/post/scratch-container-with-go/">
+    <meta property="og:title" content="External Memory Storage">
+    <meta property="og:image" content="https://blog.chann.kr/img/profile.jpg">
+    <meta name="apple-mobile-web-app-title" content="External Memory Storage">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://blog.chann.kr/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://blog.chann.kr/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://blog.chann.kr/fonts/icon.eot');
+        src: url('https://blog.chann.kr/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('https://blog.chann.kr/fonts/icon.woff')
+               format('woff'),
+             url('https://blog.chann.kr/fonts/icon.ttf')
+               format('truetype'),
+             url('https://blog.chann.kr/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://blog.chann.kr/stylesheets/application.css">
+    <link rel="stylesheet" href="https://blog.chann.kr/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://blog.chann.kr/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://blog.chann.kr/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:400,700|Roboto&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Roboto', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <script src="https://blog.chann.kr/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class=" palette-accent-deep-purple">
+
+
+
+
+<div class="backdrop">
+	<div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+	<nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        <a href="https://blog.chann.kr/">External Memory Storage</a>
+      </div>
+    </div>
+
+    
+    <div class="button button-twitter" role="button" aria-label="Twitter">
+       <a href="https://twitter.com/channprj" title="@channprj on Twitter" target="_blank" class="toggle-button icon icon-twitter"></a>
+    </div>
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/channprj" title="@channprj on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+
+    
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+	<div class="drawer">
+		<nav aria-label="Navigation">
+  <a href="https://blog.chann.kr/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="https://blog.chann.kr/img/profile.jpg">
+        </div>
+      
+      <div class="name">
+        <strong>CHANN
+           
+        </strong>
+        <span class="description">
+          
+          Junior Developer
+        </span>
+          <br>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        
+        <ul>
+          
+
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Home" href="https://blog.chann.kr/">
+	
+	Home
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="About" href="https://blog.chann.kr/about/">
+	
+	About
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Posts" href="https://blog.chann.kr/post/">
+	
+	Posts
+</a>
+
+
+  
+</li>
+
+
+
+<li>
+  
+    
+
+
+
+<a  title="Projects" href="https://blog.chann.kr/projects/">
+	
+	Projects
+</a>
+
+
+  
+</li>
+
+
+        </ul>
+        
+
+        
+        
+
+      
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+	</div>
+
+	<article class="article">
+		<div class="wrapper">
+			<h1>작고 가벼운 Go Docker 컨테이너 띄우기 </h1>
+			<div class="metadata">
+				
+				<time>2017년 11월 22일</time>
+				
+				
+				<a class="tag" href="https://blog.chann.kr/tags/dev">dev</a>
+				
+				<a class="tag" href="https://blog.chann.kr/tags/golang">golang</a>
+				
+				<a class="tag" href="https://blog.chann.kr/tags/docker">docker</a>
+				
+				<a class="tag" href="https://blog.chann.kr/tags/container">container</a>
+				
+				<a class="tag" href="https://blog.chann.kr/tags/api">api</a>
+				
+				<a class="tag" href="https://blog.chann.kr/tags/server">server</a>
+				
+			</div>
+
+			
+
+<p>작년 초에 테스트를 해보고 감탄하면서 적어도 올해 초에는 튜토리얼 수준으로 한번 정리를 하려고 마음 먹었으나 정작 글을 작성하게 된 건 올해 말이 되었다. 더 늦기전에, 아예 잊어버리기 전에 정리를 하려고 이제서라도 글을 작성한다.</p>
+
+<h2 id="기존-컨테이너">기존 컨테이너</h2>
+
+<blockquote>
+<p>여기서는 편의상 Python 과 Flask 를 사용한다.</p>
+</blockquote>
+
+<p>아래는 우리 모두에게 친숙한 <code>Hello, World!</code> 를 보여주는 간단한 <code>app.py</code> 이다.</p>
+
+<pre><code class="language-python">from flask import Flask
+app = Flask(__name__)
+app.debug = True
+
+
+@app.route('/')
+def hello():
+    return 'Hello, World!'
+
+
+if __name__ == &quot;__main__&quot;:
+    app.run(host='0.0.0.0', port=80)
+</code></pre>
+
+<p>보통은 특정 언어로 작성한 간단한 앱을 띄울 땐 아래와 같이 Dockerfile 을 작성을 한다. 아래는 Python 과 Flask 를 예시로 작성해 본 <code>Dockerfile</code> 이다.</p>
+
+<blockquote>
+<p>requirements.txt 에는 flask 패키지가 명시되어 있다.</p>
+</blockquote>
+
+<pre><code class="language-dockerfile">FROM python:3
+MAINTAINER YOUR NAME &lt;your-name@example.com&gt;
+ADD app.py requirements.txt /
+RUN pip install -r requirements.txt
+CMD [ &quot;python&quot;, &quot;./app.py&quot; ]
+ENV PORT 80
+EXPOSE 80
+</code></pre>
+
+<p>그리고 아래와 같이 컨테이너를 띄운다.</p>
+
+<pre><code class="language-bash">docker build -t flask-container .  # flask-container 라는 이미지를 만들어서
+docker run -it --name flask -p 80:80 -d flask-container  # flask 라는 이름의 container 로 띄운다
+</code></pre>
+
+<p>이렇게 생성된 flask-container 의 이미지는 아래와 같다.</p>
+
+<blockquote>
+<p>Image ID 해시값은 당연히 달라질 수 있다.</p>
+</blockquote>
+
+<pre><code class="language-bash">REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+flask-container     latest              a1392ad120dc        2 minutes ago       701MB
+</code></pre>
+
+<p>코드도 몇 줄 안 되는 간단한 API 서버를 띄웠음에도 무려 <strong>701MB</strong> 나 차지한다. 이유는 위의 Dockerfile 에서 명시한 <code>python:3</code> 는 <code>Debian Linux 8 (jessie)</code> 를 OS 로 사용하며, Python 실행을 위한 인터프리터 또한 설치되어 있기 때문이다. 임의로 alpine 기반의 Dockerfile 을 작성해서 띄우면 한결 가볍겠지만, 그럼에도 Python 실행을 위한 별도의 패키지들이 설치되어야 하는 건 어쩔수가 없다.</p>
+
+<p>컨테이너에 설치된 패키지 등의 정보는 아래와 같이 확인이 가능하다.</p>
+
+<pre><code class="language-bash">docker exec -it flask bash  # bash 로 flask 컨테이너에 연결 (--interactive --tty)
+cat /etc/*release*  # 컨테이너의 운영체제 배포판 확인
+ls /usr/bin/ /usr/local/bin/  # 컨테이너 내부에 설치된 패키지 목록 확인
+dpkg --get-selections | wc -l  # 설치된 패키지 갯수 확인
+</code></pre>
+
+<p>그러나 Go 로 작성할 경우엔 이야기가 좀 다르다. 컴파일하여 생성한 바이너리만으로도 제 기능을 하기 때문이다. 인터프리터와 같은 별도의 환경이 필요하지 않다.</p>
+
+<h2 id="go-바이너리-컨테이너">Go 바이너리 컨테이너</h2>
+
+<p>앞서 말했다시피 Go 는 바이너리만으로 실행이 가능하다.<sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup> Go 언어로 작성된 Docker 특성상 Go 언어와의 궁함이 좋을 수 밖에 없는 것 같다. 위에서 작성한 <code>Hello, World!</code> 의 기능을 하는 <code>main.go</code> 코드는 아래와 같다.</p>
+
+<pre><code class="language-go">package main
+
+import (
+	&quot;io&quot;
+	&quot;net/http&quot;
+	&quot;log&quot;
+)
+
+func HelloServer(w http.ResponseWriter, req *http.Request) {
+	io.WriteString(w, &quot;Hello, World!\n&quot;)
+}
+
+func main() {
+	http.HandleFunc(&quot;/&quot;, HelloServer)
+	log.Fatal(http.ListenAndServe(&quot;:80&quot;, nil))
+}
+</code></pre>
+
+<p>이제 빌드를 해야 한다. <code>CGO_ENABLED</code> 환경변수를 <strong>0</strong> 으로 설정해서 cgo 가 아닌 Go 컴파일러를 사용하도록 해야 한다. <code>-a</code> Flag 는 Go 에 모든 종속성을 다시 빌드하도록 한다. 그렇지 않으면 여전히 동적으로 연결된 종속성을 가지기 때문이다. 마지막으로 Linker 와 관련하여 <code>-ldflags '-s'</code> 와 같이 빌드 옵션을 부여해서 실행 파일의 크기를 약 50% 줄이는 것이 좋다.<sup class="footnote-ref" id="fnref:2"><a rel="footnote" href="#fn:2">2</a></sup></p>
+
+<blockquote>
+<p>이 글은 Macbook Pro Touchbar &lsquo;15 (Late 2016), macOS High Sierra 기준으로 작성되었으며, 어쩌면 환경에 따라서 GOARCH 와 같은 Flag 값이 조금 달라질 수도 있다.</p>
+</blockquote>
+
+<pre><code class="language-bash">CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -a -ldflags '-s' main.go
+</code></pre>
+
+<p>빌드를 하면 <code>main</code> 이라는 바이너리가 나오는데, 아래와 같이 Dockerfile 을 작성하여 띄워보자.</p>
+
+<pre><code class="language-docker">FROM scratch
+MAINTAINER YOUR NAME &lt;your-name@example.com&gt;
+ADD main /
+CMD [&quot;/main&quot;]
+ENV PORT 80
+EXPOSE 80
+</code></pre>
+
+<p>그리고 아래와 같이 컨테이너를 띄운다.</p>
+
+<pre><code class="language-bash">docker build -t go-scratch-container .  # go-scratch-container 라는 이미지를 만들어서
+docker run -it --name go-scratch -p 80:80 -d go-scratch-container  # go-scratch 라는 이름의 container 로 띄운다
+</code></pre>
+
+<p>이렇게 생성된 go-scratch-container 의 이미지는 아래와 같다.</p>
+
+<pre><code class="language-bash">REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
+go-scratch-container   latest              1e22d9716622        34 seconds ago      4.16MB
+</code></pre>
+
+<p>무려 용량이 <strong>4.16MB</strong> 이다! 같은 기능임에도 컨테이너 크기를 696.84MB 정도나 감소시켰다. <code>Alpine Linux</code> 용량보다도 작다. 조만간 로드/스트레스 테스트를 돌려서 벤치마킹을 해 볼 예정인데, 아무래도 컴파일/인터프리터 언어의 차이가 명확하므로 네트워크 문제를 제외한 순수한 앱 퍼포먼스는 훨씬 좋을 것이란 생각이 든다. 만약 회사에서 팀장님께 Go 스크래치 컨테이너로 API 서버를 만들자고 건의했는데 장점을 물으신다면 위의 결과를 보여드리면서 &lsquo;가볍고 (용량을 덜 먹어서 저렴하고)<sup class="footnote-ref" id="fnref:3"><a rel="footnote" href="#fn:3">3</a></sup> 빠릅니다!&rsquo; 라고 설득을 하면 잘 먹힐지도 모른다. 만약에 컨테이너 내부에 쉘 접속을 해야 한다거나 모니터링 <del>빨대를 꽂아서</del> 수집을 해야 한다면 눈물을 머금고 <code>FROM alpine</code> 으로 바꾼 후 관련 설정을 해주면 된다.</p>
+
+<h2 id="마무리">마무리</h2>
+
+<p>아무래도 텅 빈 스크래치 컨테이너에 바이너리를 올려서 돌리다보니 (내 기분 탓이겠지만) 조금 불안한 느낌을 지울 수가 없다. 큰 위험부담이 없는 사내 API 라면 모를까, 실 서비스에 적용을 하기엔 여러 위험요소가 있다고 본다. 오케스트레이션에 자신 있어서 문제 없이 운영할 실력이 된다면 바로 적용해도 무리는 없을 것 같지만 나는 아직 그렇지가 못하다. 그렇기에 확실히 벤치를 한번 돌려 볼 필요는 있다. 조만간 벤치를 돌려 볼 예정이다.</p>
+
+<h2 id="세-줄-요약">세 줄 요약</h2>
+
+<ul>
+<li>Go 는 Docker 와 정말 궁합이 좋다.</li>
+<li>스크래치 컨테이너에 Go 바이너리 던져서 돌리면 정말 가볍게 잘 돌아간다.</li>
+<li>그래도 테스트를 좀 더 해봐야 할 것 같다.</li>
+</ul>
+
+<hr />
+
+<h2 id="참고-링크">참고 링크</h2>
+
+<ol>
+<li><a href="https://blog.docker.com/2016/09/docker-golang/" target="_blank">Docker Blog - DOCKER + GOLANG = &lt;3</a></li>
+<li><a href="https://sebest.github.io/post/create-a-small-docker-image-for-a-golang-binary/" target="_blank">Sebest - Create a small Docker image for a GoLang binary</a></li>
+<li><a href="https://medium.com/@kelseyhightower/optimizing-docker-images-for-static-binaries-b5696e26eb07" target="_blank">Kelsey Hightower - Building Docker Images for Static Go Binaries</a></li>
+<li><a href="https://runnable.com/docker/python/dockerize-your-python-application" target="_blank">Runnable - Dockerize your Python Application</a></li>
+<li><a href="https://runnable.com/docker/" target="_blank">Runnable - Docker Tutorial</a></li>
+<li><a href="https://golang.org/pkg/net/http/" target="_blank">Go Docs - http</a></li>
+</ol>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1">물론 외부 의존성 패키지로 인한 예외가 있을 수 있다.
+ <a class="footnote-return" href="#fnref:1">↩</a></li>
+<li id="fn:2">심볼 테이블 제거 등 결과물을 작게 만든다. <code>man ld</code> 로 검색해서 보면 Obsolete 되었다고 나오긴 하지만 Go 빌드 옵션에서는 여전히 유효한 것 같다.
+ <a class="footnote-return" href="#fnref:2">↩</a></li>
+<li id="fn:3">회사에서 무언가 설득이 필요할 때 비용절감 이슈는 큰 힘이 된다.
+ <a class="footnote-return" href="#fnref:3">↩</a></li>
+</ol>
+</div>
+
+
+			<aside class="copyright" role="note">
+				
+				&copy; 2017 CHANN &ndash;
+				
+				Built with
+				<a href="https://www.gohugo.io" target="_blank">Hugo</a>
+				using customized
+				<a href="http://github.com/digitalcraftsman/hugo-material-docs" target="_blank">Material</a> theme.
+			</aside>
+
+			<footer class="footer">
+				
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="https://blog.chann.kr/post/migrate-blog/" title="블로그 이사">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              블로그 이사
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+			</footer>
+		</div>
+	</article>
+
+	<div class="results" role="status" aria-live="polite">
+		<div class="scrollable">
+			<div class="wrapper">
+				<div class="meta"></div>
+				<div class="list"></div>
+			</div>
+		</div>
+	</div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="https://blog.chann.kr/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add headers to scrollspy */
+      var headers   = document.getElementsByTagName("h2");
+      var scrollspy = document.getElementById('scrollspy');
+
+      if(scrollspy) {
+        if(headers.length > 0) {
+          for(var i = 0; i < headers.length; i++) {
+            var li = document.createElement("li");
+            li.setAttribute("class", "anchor");
+
+            var a  = document.createElement("a");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", headers[i].innerHTML);
+            a.innerHTML = headers[i].innerHTML;
+
+            li.appendChild(a)
+            scrollspy.appendChild(li);
+          }
+        } else {
+          scrollspy.parentElement.removeChild(scrollspy)
+        }
+
+
+        /* Add permanent link next to the headers */
+        var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+        for(var i = 0; i < headers.length; i++) {
+            var a = document.createElement("a");
+            a.setAttribute("class", "headerlink");
+            a.setAttribute("href", "#" + headers[i].id);
+            a.setAttribute("title", "Permanent link")
+            a.innerHTML = "#";
+            headers[i].appendChild(a);
+        }
+      }
+    </script>
+
+    
+      <script>
+        (function(i,s,o,g,r,a,m){
+          i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||
+          []).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;
+          m.parentNode.insertBefore(a,m)
+        })(window, document,
+          'script', '//www.google-analytics.com/analytics.js', 'ga');
+         
+        ga('create', 'UA-65628430-3', 'auto');
+        ga('set', 'anonymizeIp', true);
+        ga('send', 'pageview');
+         
+        var buttons = document.querySelectorAll('a');
+        Array.prototype.map.call(buttons, function(item) {
+          if (item.host != document.location.host) {
+            item.addEventListener('click', function() {
+              var action = item.getAttribute('data-action') || 'follow';
+              ga('send', 'event', 'outbound', action, item.href);
+            });
+          }
+        });
+         
+        var query = document.querySelector('.query');
+        query.addEventListener('blur', function() {
+          if (this.value) {
+            var path = document.location.pathname;
+            ga('send', 'pageview', path + '?q=' + this.value);
+          }
+        });
+      </script>
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

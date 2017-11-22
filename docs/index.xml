@@ -7,10 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
     <copyright>CHANN</copyright>
-    <lastBuildDate>Mon, 20 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>작고 가벼운 Go Docker 컨테이너 띄우기</title>
+      <link>https://blog.chann.kr/post/scratch-container-with-go/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/post/scratch-container-with-go/</guid>
+      <description>작년 초에 테스트를 해보고 감탄하면서 적어도 올해 초에는 튜토리얼 수준으로 한번 정리를 하려고 마음 먹었으나 정작 글을 작성하게 된 건 올해 말이 되었다. 더 늦기전에, 아예 잊어버리기 전에 정리를 하려고 이제서라도 글을 작성한다.
+기존 컨테이너  여기서는 편의상 Python 과 Flask 를 사용한다.
+ 아래는 우리 모두에게 친숙한 Hello, World! 를 보여주는 간단한 app.py 이다.
+from flask import Flask app = Flask(__name__) app.debug = True @app.route(&#39;/&#39;) def hello(): return &#39;Hello, World!</description>
+    </item>
     
     <item>
       <title>블로그 이사</title>
