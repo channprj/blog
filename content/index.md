@@ -1,37 +1,19 @@
 +++
 type = "index"
-title = "CHANN BLOG"
-description = "This is CHANN blog."
+title = "Home"
+description = "CHANN 개인 블로그"
 date = "2017-11-16"
 slug = "/"
 draft = false
 +++
+> 임시 페이지입니다.
 
-## 이게 메인페이지인데
-> WIP
+이 곳은 저의 다양한 종류의 생각이나 경험, 견해 등을 기록하는 공간입니다.
 
-글 목록을 바로 보여주는 게 나을지, 따로 떼어놓는 게 나을지 고민중.
+아직 테마를 개발 / 수정중이라 디자인이나 기능이 다소 부족합니다.
 
+이 페이지는 추후에 [글 목록](/post)으로 바뀔 수 있습니다.
 
-### H3 테스트
+작성된 글의 의견과 현재 저의 의견은 다를 수 있습니다.
 
-#### H4 테스트
-
-##### H5 테스트
-
-###### H6 테스트
-
-----
-
-## 표 테스트
-| Degree       | Description                                        |
-|--------------|----------------------------------------------------|
-| Beginner     | Getting started and still need support from others |
-| Basic        | Can read and write code, but not yet comfortable   |
-| Intermediate | Fairly comfortable, though at times need to reference Google or Stack Overflow |
-| Advanced     | Able to teach or advise others                     |
-| Expert       | I can do everything what I want                    |
-
-잘 그려지니...?
-
-## 뭘 또 테스트하지?
+더 나은 점이나 잘못된 점에 대해 말씀을 해주신다면 감사히 받아들이고 배우겠습니다.
