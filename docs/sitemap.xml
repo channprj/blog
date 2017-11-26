@@ -50,13 +50,13 @@
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/tags/blog/</loc>
+    <loc>https://blog.chann.kr/categories/blog/</loc>
     <lastmod>2017-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/categories/blog/</loc>
+    <loc>https://blog.chann.kr/tags/blog/</loc>
     <lastmod>2017-11-20T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -74,13 +74,13 @@
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/tags/dev/</loc>
+    <loc>https://blog.chann.kr/categories/dev/</loc>
     <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://blog.chann.kr/categories/dev/</loc>
+    <loc>https://blog.chann.kr/tags/dev/</loc>
     <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
