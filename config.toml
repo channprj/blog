@@ -1,91 +1,45 @@
 baseurl = "https://blog.chann.kr/"
 languageCode = "ko-kr"
+author = "CHANN"
 title = "External Memory Storage"
-theme = "hugo-material-blog"
+theme = "cocoa-eh"
 footnoteReturnLinkContents = "↩"
 metaDataFormat = "toml"
 canonifyurls = true
 googleAnalytics = "UA-65628430-3"
 disqusShortname = "channprj"
+publishdir = "docs"
+layoutdir = "layouts"
+contentdir = "content"
+best = true
 
-
-# Custom Option
-publishDir = "docs"
-enableRobotsTXT = true
-paginate = 5
-PaginatePath = "page"
-
+[permalinks]
+blog = "blog/:slug/"
 
 [params]
-    # General information
-    author = "CHANN"
-    description = "Junior Developer"
-    copyright = "CHANN"
-
-    # Repository
-    # provider = "GitHub"
-    # repo_url = "https://github.com/channprj/blog"
-
-    version = "1.0.0"
-    logo = "img/profile.jpg"
-    favicon = ""
-
-    permalink = "#"
-
-    # Custom assets
-    custom_css = []
-    custom_js  = []
-
-    # Syntax highlighting theme
-    highlight_css  = ""
-
-    [params.palette]
-        primary = ""
-        accent  = "deep-purple"
-
-    [params.font]
-        text = "Roboto"
-        code = "Roboto Mono"
-
-
-[social]
-    twitter = "channprj"
-    facebook = "channprj"
-    linkedin = "channprj"
-    behance = "channprj"
-    github  = "channprj"
-    # email   = "chann@chann.kr"
-
-
-[[menu.main]]
-    name   = "Home"
-    url    = "/"
-    weight = -10
-
-[[menu.main]]
-    name   = "About"
-    url    = "about/"
-    weight = 10
-
-[[menu.main]]
-    name   = "Posts"
-    url    = "post/"
-    weight = 20
-
-[[menu.main]]
-    name   = "Projects"
-    url    = "projects/"
-    weight = 30
-
-# [[menu.main]]
-#     name   = "License"
-#     url    = "license/"
-#     weight = 40
-
+# General information
+description = "Junior Developer"
+copyright = "© CHANN"
+dateform = "2006-01-31"
+dateformfull = "2006-03-31 15:04:05 KST"
+share = true
+logofile = "img/logo.png"
+faviconfile = "img/logo.png"
+highlightjs = true
+progressively = true
+align_left = false
+lang = "ko"
+github = "channprj"
+email = "chann@chann.kr"
+linkedin = "channprj"
+twitter = "channprj"
+# social_banner = "img/banner.png"
+posts_navigation = true
+small_banner_logo = true
 
 [blackfriday]
-    smartypants	= true
-    fractions = true
-    smartDashes = true
-    plainIDAnchors = true
-    hrefTargetBlank = true
+smartypants	= true
+fractions = true
+smartDashes = true
+plainIDAnchors = true
+hrefTargetBlank = true

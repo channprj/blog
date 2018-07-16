@@ -6,9 +6,145 @@
     <description>Recent content in Tags on External Memory Storage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
+    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>https://blog.chann.kr/tags/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Api</title>
+      <link>https://blog.chann.kr/tags/api/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://blog.chann.kr/tags/blog/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Container</title>
+      <link>https://blog.chann.kr/tags/container/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/container/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dev</title>
+      <link>https://blog.chann.kr/tags/dev/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/dev/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://blog.chann.kr/tags/docker/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gatsbyjs</title>
+      <link>https://blog.chann.kr/tags/gatsbyjs/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/gatsbyjs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ghost</title>
+      <link>https://blog.chann.kr/tags/ghost/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/ghost/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Golang</title>
+      <link>https://blog.chann.kr/tags/golang/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/golang/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hexo</title>
+      <link>https://blog.chann.kr/tags/hexo/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/hexo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hugo</title>
+      <link>https://blog.chann.kr/tags/hugo/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jekyll</title>
+      <link>https://blog.chann.kr/tags/jekyll/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/jekyll/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pelican</title>
+      <link>https://blog.chann.kr/tags/pelican/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/pelican/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Server</title>
+      <link>https://blog.chann.kr/tags/server/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/server/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tags</title>
+      <link>https://blog.chann.kr/tags/tags/</link>
+      <pubDate>Mon, 16 Jul 2018 10:50:09 +0900</pubDate>
+      
+      <guid>https://blog.chann.kr/tags/tags/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

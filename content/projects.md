@@ -1,5 +1,4 @@
 +++
-title = "Projects"
 description = "저의 개인 프로젝트를 설명합니다"
 date = "2017-11-17"
 slug = "projects"

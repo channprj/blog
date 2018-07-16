@@ -3,23 +3,170 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://blog.chann.kr/posts/my-first-post/</loc>
+    <lastmod>2018-07-16T10:50:09+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/posts/scratch-container-with-go/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/posts/migrate-blog/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/projects/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/about/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://blog.chann.kr/</loc>
     <lastmod>2017-11-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
+    <loc>https://blog.chann.kr/tags/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/categories/about/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/api/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/blog/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/categories/blog/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.chann.kr/categories/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/container/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/dev/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/categories/dev/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/docker/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.chann.kr/</loc>
-    <lastmod>2017-11-16T00:00:00+00:00</lastmod>
+    <lastmod>2018-07-16T10:50:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/gatsbyjs/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/ghost/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/golang/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/hexo/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/hugo/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/jekyll/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/categories/life/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/pelican/</loc>
+    <lastmod>2017-11-20T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/posts/</loc>
+    <lastmod>2018-07-16T10:50:09+09:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/server/</loc>
+    <lastmod>2017-11-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://blog.chann.kr/tags/</loc>
+    <lastmod>2017-11-17T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.chann.kr/tags/tags/</loc>
+    <lastmod>2018-07-16T10:50:09+09:00</lastmod>
     <priority>0</priority>
   </url>
   

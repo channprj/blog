@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on External Memory Storage</title>
+    <link>https://blog.chann.kr/posts/</link>
+    <description>Recent content in Posts on External Memory Storage</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ko-kr</language>
+    <lastBuildDate>Mon, 16 Jul 2018 10:50:09 +0900</lastBuildDate>
+    
+	<atom:link href="https://blog.chann.kr/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>My First Post</title>
+      <link>https://blog.chann.kr/posts/my-first-post/</link>
+      <pubDate>Mon, 16 Jul 2018 10:50:09 +0900</pubDate>
+      
+      <guid>https://blog.chann.kr/posts/my-first-post/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>작고 가벼운 Go Docker 컨테이너 띄우기</title>
+      <link>https://blog.chann.kr/posts/scratch-container-with-go/</link>
+      <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/posts/scratch-container-with-go/</guid>
+      <description>작년 초에 테스트를 해보고 감탄하면서 적어도 올해 초에는 튜토리얼 수준으로 한번 정리를 하려고 마음 먹었으나 정작 글을 작성하게 된 건 올해 말이 되었다. 더 늦기전에, 아예 잊어버리기 전에 정리를 하려고 이제서라도 글을 작성한다.
+기존 컨테이너  여기서는 편의상 Python 과 Flask 를 사용한다.
+ 아래는 우리 모두에게 친숙한 Hello, World! 를 보여주는 간단한 app.py 이다.
+from flask import Flask app = Flask(__name__) app.debug = True @app.route(&#39;/&#39;) def hello(): return &#39;Hello, World!</description>
+    </item>
+    
+    <item>
+      <title>블로그 이사</title>
+      <link>https://blog.chann.kr/posts/migrate-blog/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/posts/migrate-blog/</guid>
+      <description>이번 가을에 개인적으로 사용하던 AWS 계정을 정리하게 되었다. 그 동안 여기저기서 크레딧을 지원받아 잘 사용하고 있었지만 아무래도 개인적으로 돈을 내고 쓰자니 조금 부담이 되었다. 굳이 개인 블로그를 위해 서버를 운영하는 것 또한 피곤하기도 했다. 고민을 하다보니 Github Pages 를 활용하는 것으로 생각이 좁혀졌고, 다시 정적 페이지 생성기들을 한번 두루 써봤다.
+서비스형 블로그 사용도 잠시 고민했지만, 여러 Pain Point 들을 극복해서 참고 쓸 자신이 생기지 않았다. Medium 이 그나마 가장 나았는데, 여긴 한글폰트가 구리고 이걸 내가 어떻게 바꿔서 쓸 수가 없다.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,5 +1,4 @@
 +++
-type = "page"
 title = "About"
 description = "박희찬에 대한 소개입니다."
 tags = [
