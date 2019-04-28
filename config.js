@@ -5,7 +5,7 @@ module.exports = {
   title: 'CHANN Blog',
   subtitle: 'External Memory by CHANN',
   copyright: '© CHANN',
-  disqusShortname: '',
+  disqusShortname: 'channprj',
   postsPerPage: 5,
   googleAnalyticsId: 'UA-65628430-3',
   menu: [
