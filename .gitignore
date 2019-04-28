@@ -1,7 +1,8 @@
-# macOS
-.DS_Store
-
-# hugo
+node_modules/
+.cache/
 public/
-themes/
-
+npm-debug.log
+.eslintcache
+.gatsby-context.js
+.idea
+gatsby-starter-lumen.iml
