@@ -6,31 +6,13 @@
     <description>Recent content in Categories on External Memory Storage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Fri, 17 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Nov 2017 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>About</title>
-      <link>https://blog.chann.kr/categories/about/</link>
-      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.chann.kr/categories/about/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Blog</title>
-      <link>https://blog.chann.kr/categories/blog/</link>
-      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://blog.chann.kr/categories/blog/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dev</title>
+      <title>dev</title>
       <link>https://blog.chann.kr/categories/dev/</link>
       <pubDate>Wed, 22 Nov 2017 00:00:00 +0000</pubDate>
       
@@ -39,11 +21,29 @@
     </item>
     
     <item>
-      <title>Life</title>
+      <title>blog</title>
+      <link>https://blog.chann.kr/categories/blog/</link>
+      <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/categories/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>life</title>
       <link>https://blog.chann.kr/categories/life/</link>
       <pubDate>Mon, 20 Nov 2017 00:00:00 +0000</pubDate>
       
       <guid>https://blog.chann.kr/categories/life/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://blog.chann.kr/categories/about/</link>
+      <pubDate>Fri, 17 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.chann.kr/categories/about/</guid>
       <description></description>
     </item>
     

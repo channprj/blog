@@ -6,16 +6,15 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
 <meta name="description" content="Junior Developer">
 
 
     <meta property="twitter:site" content="@channprj">
 
 <meta property="og:site_name" content="External Memory Storage" />
-<meta property="og:locale" content="nn_NO" />
+<meta property="og:locale" content="ko-kr" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.chann.kr/posts/scratch-container-with-go/" />
+<meta property="og:url" content="https://blog.chann.kr/blog/scratch-container-with-go/" />
 <meta property="og:title" content="작고 가벼운 Go Docker 컨테이너 띄우기" />
 <meta property="twitter:title" content="작고 가벼운 Go Docker 컨테이너 띄우기">
 
@@ -30,7 +29,7 @@
      External Memory Storage - 작고 가벼운 Go Docker 컨테이너 띄우기 
 
 </title>
-<link rel="canonical" href="https://blog.chann.kr/posts/scratch-container-with-go/">
+<link rel="canonical" href="https://blog.chann.kr/blog/scratch-container-with-go/">
 
 
 <style media="screen">
@@ -193,7 +192,9 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
+  
   max-width: 100px;
+  
   margin-left: -2em;
 }
 div.header .name {
@@ -315,7 +316,8 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
-  margin-bottom: 4em;
+  
+  
 }
 div.main .content .page-heading {
   font-size: 20px;
@@ -787,11 +789,15 @@ section {
 padding: 0 16px;
 margin-left: 100px;
 margin-right: 100px;
+
 max-width: 750px;
+
 }
 div.column {
 padding: 0 16px;
+
 max-width: 750px;
+
 }
 div.header {
 background-color: transparent;
@@ -806,8 +812,8 @@ div.header .container .logo {
 margin: 0;
 }
 div.header-home .container .logo {
-max-width: 180px;
-margin-left: 20px;
+max-width: 216px;
+margin-left: 24px;
 }
 div.header-home .name-home {
 padding-top: 30px;
@@ -892,11 +898,16 @@ padding-top: 60px;
 padding-bottom: 60px;
 }
 div.footer {
-padding-top: 30px;
+padding-top: 60px;
 padding-bottom: 60px;
 }
 div.main {
 padding-top: 0;
+}
+div.main .content {
+  
+  font-size: 16px;
+  
 }
 div.main .container .content .post-item {
 display: flex;
@@ -905,10 +916,6 @@ padding-left: 1.5em;
 }
 div.main .container .content .post-item .meta {
 display: block;
-}
-div.main.post {
-padding-top: 60px;
-padding-bottom: 60px;
 }
 div.main .content .markdown blockquote {
 padding-right: 5rem;
@@ -1003,10 +1010,10 @@ margin-left: -4%;
             <nav>
                 <ul>
                     
+                            <li><a href="https://blog.chann.kr/blog/">Blog</a></li>
+                    
                     
                         
-                            
-                            <li><a href="https://blog.chann.kr/posts">posts</a></li>
                             
                         
                     
@@ -1029,15 +1036,55 @@ margin-left: -4%;
 
 
 
-<div class="main column">
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            <div class="page-heading">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
 
+    
     작고 가벼운 Go Docker 컨테이너 띄우기
+    
 
 </div>
 
+                </div>
+                <div class="meta">
+                    <div class="date" title="2017-12-1211 00:00:00 KST">2017-11-1211</div>
+                    
+                        
+                    
+                    
+                    <div class="reading-time middot">4 minute read</div>
+                    
+                    <div class="tags">
+                        <ul>
+                          
+                            <li class="middot"><a href="https://blog.chann.kr/tags/dev">dev</a> </li>
+                          
+                            <li class="middot"><a href="https://blog.chann.kr/tags/golang">golang</a> </li>
+                          
+                            <li class="middot"><a href="https://blog.chann.kr/tags/docker">docker</a> </li>
+                          
+                            <li class="middot"><a href="https://blog.chann.kr/tags/container">container</a> </li>
+                          
+                            <li class="middot"><a href="https://blog.chann.kr/tags/api">api</a> </li>
+                          
+                            <li class="middot"><a href="https://blog.chann.kr/tags/server">server</a> </li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="markdown">
                 
     
@@ -1205,6 +1252,70 @@ go-scratch-container   latest              1e22d9716622        34 seconds ago   
 
 
             </div>
+            
+            <br>
+            <div class="share">
+                  
+                  <a href="" class="ssk ssk-facebook"></a>
+                  
+                  
+                  <a href="" class="ssk ssk-twitter"></a>
+                  
+                  
+                  <a href="" class="ssk ssk-google-plus"></a>
+                  
+                  
+                  <a href="" class="ssk ssk-linkedin"></a>
+                  
+            </div>
+            
+            
+            <br>
+            <div class="navigation">
+                
+                <div>
+                    <img class="icon" src="https://blog.chann.kr/img/back.svg" alt="back" />
+                    <a href="https://blog.chann.kr/blog/migrate-blog/">블로그 이사</a>
+                </div>
+                
+                <div style="width: 100%;"></div>
+                
+                <div>
+                    <a href="https://blog.chann.kr/blog/init-prometheus-grafana/">Prometheus 및 Grafana 설치 및 설정</a>
+                    <img class="icon" src="https://blog.chann.kr/img/next.svg" alt="next" />
+                </div>
+                
+            </div>
+            
+            
+            <br>
+            <div class="disqus">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "channprj" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            
+
+            
+
+            
         </div>
     </div>
 </div>
@@ -1234,21 +1345,27 @@ go-scratch-container   latest              1e22d9716622        34 seconds ago   
         
 
         
-            <a href="https://github.com/channprj" target="_blank">
+
+        
+
+        
+            <a href="https://github.com/channprj" rel=me target="_blank">
                 <img class="icon" src="https://blog.chann.kr/img/github.svg" alt="github" />
             </a>
         
 
         
-            <a href="https://twitter.com/channprj" target="_blank">
+            <a href="https://twitter.com/channprj" rel=me target="_blank">
                 <img class="icon" src="https://blog.chann.kr/img/twitter.svg" alt="twitter" />
             </a>
         
 
         
-            <a href="https://www.linkedin.com/in/channprj" target="_blank">
+            <a href="https://www.linkedin.com/in/channprj" rel=me target="_blank">
                 <img class="icon" src="https://blog.chann.kr/img/linkedin.svg" alt="linkedin" />
             </a>
+        
+
         
 
         
@@ -1294,7 +1411,7 @@ go-scratch-container   latest              1e22d9716622        34 seconds ago   
 
 
 
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;

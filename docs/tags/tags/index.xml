@@ -1,23 +1,25 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on External Memory Storage</title>
+    <title>tags on External Memory Storage</title>
     <link>https://blog.chann.kr/tags/tags/</link>
-    <description>Recent content in Tags on External Memory Storage</description>
+    <description>Recent content in tags on External Memory Storage</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko-kr</language>
-    <lastBuildDate>Mon, 16 Jul 2018 10:50:09 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 28 Apr 2019 16:13:52 +0900</lastBuildDate>
     
 	<atom:link href="https://blog.chann.kr/tags/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Post</title>
-      <link>https://blog.chann.kr/posts/my-first-post/</link>
-      <pubDate>Mon, 16 Jul 2018 10:50:09 +0900</pubDate>
+      <title>Prometheus 및 Grafana 설치 및 설정</title>
+      <link>https://blog.chann.kr/blog/init-prometheus-grafana/</link>
+      <pubDate>Sun, 28 Apr 2019 16:13:52 +0900</pubDate>
       
-      <guid>https://blog.chann.kr/posts/my-first-post/</guid>
-      <description></description>
+      <guid>https://blog.chann.kr/blog/init-prometheus-grafana/</guid>
+      <description>개인 서버들 모니터링 등의 목적으로 작은 서버를 하나 구했다. 모니터링 앱을 Docker 로 띄울까 고민하다가 서버의 성능이 낮아서 그냥 로컬에 직접 띄우기로 했다. 자주 옮겨다닐 것 같지 않아서 내린 결정인데, 만약 개인 서버들을 쿠버네티스로 관리하기 시작한다면 이사를 갈 수도 있지만 당장은 서버들의 성능이 낮아서 힘들 것 같다. 😂
+Prometheus 설치 아래와 같이 Prometheus 서비스용 사용자를 생성하자.
+sudo useradd --no-create-home --shell /usr/sbin/nologin prometheus  패키지를 직접 받아서 설치해도 되지만 귀찮음 등 여러가지의 이유로 패키지 매니져를 통해 설치하기로 했다.</description>
     </item>
     
   </channel>

@@ -6,31 +6,30 @@
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="referrer" content="no-referrer">
 <meta name="description" content="Junior Developer">
 
 
     <meta property="twitter:site" content="@channprj">
 
 <meta property="og:site_name" content="External Memory Storage" />
-<meta property="og:locale" content="nn_NO" />
+<meta property="og:locale" content="ko-kr" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.chann.kr/posts/my-first-post/" />
-<meta property="og:title" content="My First Post" />
-<meta property="twitter:title" content="My First Post">
+<meta property="og:url" content="https://blog.chann.kr/blog/init-prometheus-grafana/" />
+<meta property="og:title" content="Prometheus 및 Grafana 설치 및 설정" />
+<meta property="twitter:title" content="Prometheus 및 Grafana 설치 및 설정">
 
     <meta property="twitter:card" content="summary">
 
-<meta property="og:description" content="Desc">
-<meta property="twitter:description" content="Desc">
+<meta property="og:description" content="">
+<meta property="twitter:description" content="">
 
 <title>
 
 
-     External Memory Storage - My First Post 
+     External Memory Storage - Prometheus 및 Grafana 설치 및 설정 
 
 </title>
-<link rel="canonical" href="https://blog.chann.kr/posts/my-first-post/">
+<link rel="canonical" href="https://blog.chann.kr/blog/init-prometheus-grafana/">
 
 
 <style media="screen">
@@ -193,7 +192,9 @@ div.header .content {
   align-items: center;
 }
 div.header .container .logo {
+  
   max-width: 100px;
+  
   margin-left: -2em;
 }
 div.header .name {
@@ -315,7 +316,8 @@ div.main .content .title-container {
   justify-content: space-between;
 }
 div.main .content .posts {
-  margin-bottom: 4em;
+  
+  
 }
 div.main .content .page-heading {
   font-size: 20px;
@@ -787,11 +789,15 @@ section {
 padding: 0 16px;
 margin-left: 100px;
 margin-right: 100px;
+
 max-width: 750px;
+
 }
 div.column {
 padding: 0 16px;
+
 max-width: 750px;
+
 }
 div.header {
 background-color: transparent;
@@ -806,8 +812,8 @@ div.header .container .logo {
 margin: 0;
 }
 div.header-home .container .logo {
-max-width: 180px;
-margin-left: 20px;
+max-width: 216px;
+margin-left: 24px;
 }
 div.header-home .name-home {
 padding-top: 30px;
@@ -892,11 +898,16 @@ padding-top: 60px;
 padding-bottom: 60px;
 }
 div.footer {
-padding-top: 30px;
+padding-top: 60px;
 padding-bottom: 60px;
 }
 div.main {
 padding-top: 0;
+}
+div.main .content {
+  
+  font-size: 16px;
+  
 }
 div.main .container .content .post-item {
 display: flex;
@@ -905,10 +916,6 @@ padding-left: 1.5em;
 }
 div.main .container .content .post-item .meta {
 display: block;
-}
-div.main.post {
-padding-top: 60px;
-padding-bottom: 60px;
 }
 div.main .content .markdown blockquote {
 padding-right: 5rem;
@@ -1003,10 +1010,10 @@ margin-left: -4%;
             <nav>
                 <ul>
                     
+                            <li><a href="https://blog.chann.kr/blog/">Blog</a></li>
+                    
                     
                         
-                            
-                            <li><a href="https://blog.chann.kr/posts">posts</a></li>
                             
                         
                     
@@ -1029,21 +1036,213 @@ margin-left: -4%;
 
 
 
-<div class="main column">
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            <div class="page-heading">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading">
 
-    My First Post
+    
+    Prometheus 및 Grafana 설치 및 설정
+    
 
 </div>
 
+                </div>
+                <div class="meta">
+                    <div class="date" title="2019-04-44 16:13:52 KST">2019-04-44</div>
+                    
+                        
+                    
+                    
+                    <div class="reading-time middot">3 minute read</div>
+                    
+                    <div class="tags">
+                        <ul>
+                          
+                            <li class="middot"><a href="https://blog.chann.kr/tags/tags">tags</a> </li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="markdown">
                 
     
     
 
+<p>개인 서버들 모니터링 등의 목적으로 작은 서버를 하나 구했다. 모니터링 앱을 Docker 로 띄울까 고민하다가 서버의 성능이 낮아서 그냥 로컬에 직접 띄우기로 했다. 자주 옮겨다닐 것 같지 않아서 내린 결정인데, 만약 개인 서버들을 쿠버네티스로 관리하기 시작한다면 이사를 갈 수도 있지만 당장은 서버들의 성능이 낮아서 힘들 것 같다. 😂</p>
+
+<h2 id="prometheus-설치">Prometheus 설치</h2>
+
+<p>아래와 같이 Prometheus 서비스용 사용자를 생성하자.</p>
+
+<pre><code class="language-bash">sudo useradd --no-create-home --shell /usr/sbin/nologin prometheus
+</code></pre>
+
+<p>패키지를 직접 받아서 설치해도 되지만 귀찮음 등 여러가지의 이유로 패키지 매니져를 통해 설치하기로 했다. 아래와 같이 설치를 진행하자.</p>
+
+<pre><code class="language-bash">sudo apt-get update -y
+sudo apt-get install -y prometheus prometheus-node-exporter prometheus-pushgateway prometheus-alertmanager
+</code></pre>
+
+<h3 id="prometheus-서비스-시작">Prometheus 서비스 시작</h3>
+
+<pre><code class="language-bash">sudo systemctl start prometheus
+sudo systemctl enable prometheus
+# sudo systemctl status prometheus # 서비스 확인
+</code></pre>
+
+<p>Prometheus 의 기본 포트는 9090 이다.</p>
+
+<h2 id="grafana-설치">Grafana 설치</h2>
+
+<p>공식 홈페이지에서 패키지를 직접 받아서 설치해도 상관없지만 아래와 같이 패키지 매니져에 추가 후 받아오는 방법도 있다. Grafana 는 설치 과정에서 서비스용 사용자가 생성이 되므로 미리 계정을 만들어 줄 필요는 없어보인다.</p>
+
+<pre><code class="language-bash">sudo add-apt-repository &quot;deb https://packages.grafana.com/oss/deb stable main&quot;
+curl https://packages.grafana.com/gpg.key | sudo apt-key add -
+sudo apt-get update
+sudo apt-get install grafana
+</code></pre>
+
+<h3 id="grafana-서비스-시작">Grafana 서비스 시작</h3>
+
+<pre><code class="language-bash">sudo systemctl daemon-reload
+sudo systemctl start grafana-server
+sudo systemctl enable grafana-server
+# sudo systemctl status grafana-server # 서비스 확인
+</code></pre>
+
+<p>Grafana 의 기본 포트는 3000 이다. 기타 자세한 사항은 <code>vim /etc/grafana/grafana.ini</code> 파일을 참고하면 된다.</p>
+
+<p>만약 설정값을 바꾸게 되면 <code>reload</code> 옵션이 없으니  <code>systemctl restart grafana-server</code> 로 재시작을 해야 한다.</p>
+
+<h3 id="기본-관리자-수정">기본 관리자 수정</h3>
+
+<p><code>grafana.ini</code> 파일을 보면 알겠지만, 기본 아이디/비밀번호가 모두 <strong>admin</strong> 이다. 비밀번호는 반드시 바꾸어야 하며, 새로운 계정을 생성해서 관리자로 지정한 후 admin 계정을 삭제하여도 무방하다.</p>
+
+<p>admin 비밀번호 수정은 웹에서 로그인 한 후 수정을 하거나, <code>grafana-cli admin reset-admin-password ...</code> 와 같은 형태로 수정할 수 있다.</p>
+
+<h2 id="grafana-dashboard-추가">Grafana Dashboard 추가</h2>
+
+<p>하나하나 패널 추가하는 것이 귀찮으면 <a href="https://grafana.com/dashboards?dataSource=prometheus" target="_blank">Grafana 공식 대시보드 모음</a> 에서 남들이 만들어 놓은 대시보드를 직접 받을 수 있다.</p>
+
+<p>여기까지 설치 및 설정이 되었다면, 아래와 같은 화면을 볼 수 있다.</p>
+
+<p><figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://blog.chann.kr/static/img/grafana-prometheus-dashboard.png" src="https://blog.chann.kr/static/img/low/grafana-prometheus-dashboard.png" alt="grafana-prometheus-dashboard" /></p></figure>
+
+<h2 id="prometheus-node-exporter">Prometheus Node Exporter</h2>
+
+<p>Prometheus 는 하드웨어 및 커널과 관련된 메트릭 데이터를 내보내주는 <strong>Node Exporter</strong> 라는 기본 도구를 제공한다. *NIX 시스템을 위한 도구라서 윈도우 서버는 지원하지 않는다. 로컬 환경의 정보를 다루다 보니 Docker 와 같은 컨테이너 형태의 설치는 권장하지 않는다. Docker 혹은 Kubernetes 메트릭 데이터 수집은 다른 도구가 있다.</p>
+
+<h3 id="node-exporter-설치">Node Exporter 설치</h3>
+
+<p><a href="https://github.com/prometheus/node_exporter" target="_blank">공식 GitHub 저장소</a>에서 받이서 설치해도 되지만, 우리는 아래와 같이 패키지 매니져를 통해 설치하자.</p>
+
+<pre><code class="language-bash">sudo apt install prometheus-node-exporter
+</code></pre>
+
+<p>패키지를 직접 받아서 설치하고 싶다면 공식 문서를 확인하자.</p>
+
+<p>마지막으로, Prometheus 의 설정에서 수집 대상 서버 주소를 추가하고 Reload 해주면 끝난다. 아래와 같이 <code>/etc/prometheus/prometheus.yml</code> 파일의 하단을 보면 &lsquo;targets&rsquo; 항목이 있는데, 해당 부분에 수집할 서버의 엔드포인트를 추가해주면 된다.</p>
+
+<pre><code class="language-yaml">scrape_configs:
+  - job_name: node
+    # If prometheus-node-exporter is installed, grab stats about the local
+    # machine by default.
+    static_configs:
+      - targets: ['localhost:9100', 'new.node.com:9100']
+</code></pre>
+
+<p>추가하고 나서는 아래와 같이 Prometheus 를 다시 로드해준다.</p>
+
+<pre><code class="language-bash">systemctl reload prometheus.service
+</code></pre>
+
+<p>성공적으로 추가가 됐는지 확인을 하고 싶다면 http://<PROMETHEUS_SERVER>:9090/targets 로 접속하면 아래와 같이 확인 가능하다.</p>
+
+<p><figure class="progressive"><img class="progressive__img progressive--not-loaded" data-progressive="https://blog.chann.kr/static/img/prometheus-new-node.png" src="https://blog.chann.kr/static/img/low/prometheus-new-node.png" alt="prometheus-new-node" /></p></figure>
+
+<p>다음 번에는 Home Assistant 를 활용하여 샤오미 공기청정기 데이터를 연동하여 Grafana 로 그래프를 보여주는 글을 작성 할 것이다.</p>
+
+<h2 id="참고-링크">참고 링크</h2>
+
+<ul>
+<li><a href="https://prometheus.io/" target="_blank">Prometheus</a></li>
+<li><a href="https://grafana.com/" target="_blank">Grafana</a></li>
+<li><a href="https://prometheus.io/docs/guides/node-exporter/" target="_blank">Prometheus - Monitoring linux host metrics with the node exporter</a></li>
+</ul>
+
+
             </div>
+            
+            <br>
+            <div class="share">
+                  
+                  <a href="" class="ssk ssk-facebook"></a>
+                  
+                  
+                  <a href="" class="ssk ssk-twitter"></a>
+                  
+                  
+                  <a href="" class="ssk ssk-google-plus"></a>
+                  
+                  
+                  <a href="" class="ssk ssk-linkedin"></a>
+                  
+            </div>
+            
+            
+            <br>
+            <div class="navigation">
+                
+                <div>
+                    <img class="icon" src="https://blog.chann.kr/img/back.svg" alt="back" />
+                    <a href="https://blog.chann.kr/blog/scratch-container-with-go/">작고 가벼운 Go Docker 컨테이너 띄우기</a>
+                </div>
+                
+                <div style="width: 100%;"></div>
+                
+            </div>
+            
+            
+            <br>
+            <div class="disqus">
+                <div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "channprj" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+            </div>
+            
+
+            
+
+            
         </div>
     </div>
 </div>
@@ -1073,21 +1272,27 @@ margin-left: -4%;
         
 
         
-            <a href="https://github.com/channprj" target="_blank">
+
+        
+
+        
+            <a href="https://github.com/channprj" rel=me target="_blank">
                 <img class="icon" src="https://blog.chann.kr/img/github.svg" alt="github" />
             </a>
         
 
         
-            <a href="https://twitter.com/channprj" target="_blank">
+            <a href="https://twitter.com/channprj" rel=me target="_blank">
                 <img class="icon" src="https://blog.chann.kr/img/twitter.svg" alt="twitter" />
             </a>
         
 
         
-            <a href="https://www.linkedin.com/in/channprj" target="_blank">
+            <a href="https://www.linkedin.com/in/channprj" rel=me target="_blank">
                 <img class="icon" src="https://blog.chann.kr/img/linkedin.svg" alt="linkedin" />
             </a>
+        
+
         
 
         
@@ -1133,7 +1338,7 @@ margin-left: -4%;
 
 
 
-<script>
+<script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
 	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
