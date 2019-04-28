@@ -74,7 +74,7 @@ admin 비밀번호 수정은 웹에서 로그인 한 후 수정을 하거나, `g
 
 여기까지 설치 및 설정이 되었다면, 아래와 같은 화면을 볼 수 있다.
 
-![grafana-prometheus-dashboard](/static/img/grafana-prometheus-dashboard.png)
+![grafana-prometheus-dashboard](/img/grafana-prometheus-dashboard.png)
 
 ## Prometheus Node Exporter
 Prometheus 는 하드웨어 및 커널과 관련된 메트릭 데이터를 내보내주는 **Node Exporter** 라는 기본 도구를 제공한다. *NIX 시스템을 위한 도구라서 윈도우 서버는 지원하지 않는다. 로컬 환경의 정보를 다루다 보니 Docker 와 같은 컨테이너 형태의 설치는 권장하지 않는다. Docker 혹은 Kubernetes 메트릭 데이터 수집은 다른 도구가 있다.
@@ -107,7 +107,7 @@ systemctl reload prometheus.service
 
 성공적으로 추가가 됐는지 확인을 하고 싶다면 http://<PROMETHEUS_SERVER>:9090/targets 로 접속하면 아래와 같이 확인 가능하다.
 
-![prometheus-new-node](/static/img/prometheus-new-node.png)
+![prometheus-new-node](/img/prometheus-new-node.png)
 
 다음 번에는 Home Assistant 를 활용하여 샤오미 공기청정기 데이터를 연동하여 Grafana 로 그래프를 보여주는 글을 작성 할 것이다.
 
