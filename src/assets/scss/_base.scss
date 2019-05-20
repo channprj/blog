@@ -2,5 +2,8 @@
 
 @import "normalize-scss";
 @import "~katex/dist/katex.min.css";
-@import "~prismjs/themes/prism-solarizedlight.css";
+// @import "~prismjs/themes/prism-solarizedlight.css";
+// @import "prism/prism-dracula.css";
+@import "prism/prism-onedark.css";
 @import "base/generic";
+@import "base/overrides";
