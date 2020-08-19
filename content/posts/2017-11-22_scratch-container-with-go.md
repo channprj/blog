@@ -16,6 +16,7 @@ draft: false
 ---
 
 ## 기존 컨테이너
+
 > 여기서는 편의상 Python 과 Flask 를 사용한다.
 
 아래는 우리 모두에게 친숙한 `Hello, World!` 를 보여주는 간단한 `app.py` 이다.
@@ -79,6 +80,7 @@ dpkg --get-selections | wc -l  # 설치된 패키지 갯수 확인
 그러나 Go 로 작성할 경우엔 이야기가 좀 다르다. 컴파일하여 생성한 바이너리만으로도 제 기능을 하기 때문이다. 인터프리터와 같은 별도의 환경이 필요하지 않다.
 
 ## Go 바이너리 컨테이너
+
 앞서 말했다시피 Go 는 바이너리만으로 실행이 가능하다.[^1] Go 언어로 작성된 Docker 특성상 Go 언어와의 궁합이 좋을 수 밖에 없다. 위에서 작성한 `Hello, World!` 의 기능을 하는 `main.go` 코드는 아래와 같다.
 
 ```go
@@ -136,16 +138,19 @@ go-scratch-container   latest              1e22d9716622        34 seconds ago   
 무려 용량이 **4.16MB** 이다! 같은 기능임에도 컨테이너 크기를 696.84MB 정도나 감소시켰다. `Alpine Linux` 용량보다도 작다. 조만간 로드/스트레스 테스트를 돌려서 벤치마킹을 해 볼 예정인데, 아무래도 컴파일/인터프리터 언어의 차이가 명확하므로 네트워크 문제를 제외한 순수한 앱 퍼포먼스는 훨씬 좋을 것이란 생각이 든다. 만약 회사에서 팀장님께 Go 스크래치 컨테이너로 API 서버를 만들자고 건의했는데 장점을 물으신다면 위의 결과를 보여드리면서 '가볍고 (용량을 덜 먹어서 저렴하고)[^3] 빠릅니다!' 라고 설득을 하면 잘 먹힐지도 모른다. 만약에 컨테이너 내부에 쉘 접속을 해야 한다거나 모니터링 ~~빨대를 꽂아서~~ 수집을 해야 한다면 눈물을 머금고 `FROM alpine` 으로 바꾼 후 관련 설정을 해주면 된다.
 
 ## 마무리
+
 아무래도 텅 빈 스크래치 컨테이너에 바이너리를 올려서 돌리다보니 (내 기분 탓이겠지만) 조금 불안한 느낌을 지울 수가 없다. 큰 위험부담이 없는 사내 API 라면 모를까, 실 서비스에 적용을 하기엔 여러 위험요소가 있다고 본다. 오케스트레이션에 자신 있어서 문제 없이 운영할 실력이 된다면 바로 적용해도 무리는 없을 것 같지만 나는 아직 그렇지가 못하다. 그렇기에 확실히 벤치를 한번 돌려 볼 필요는 있다. 조만간 벤치를 돌려 볼 예정이다.
 
 ## 세 줄 요약
+
 - Go 는 Docker 와 정말 궁합이 좋다.
 - 스크래치 컨테이너에 Go 바이너리 던져서 돌리면 정말 가볍게 잘 돌아간다.
 - 그래도 테스트를 좀 더 해봐야 할 것 같다.
 
-----
+---
 
 ## 참고 링크
+
 1. [Docker Blog - DOCKER + GOLANG = <3](https://blog.docker.com/2016/09/docker-golang/)
 2. [Sebest - Create a small Docker image for a GoLang binary](https://sebest.github.io/post/create-a-small-docker-image-for-a-golang-binary/)
 3. [Kelsey Hightower - Building Docker Images for Static Go Binaries](https://medium.com/@kelseyhightower/optimizing-docker-images-for-static-binaries-b5696e26eb07)
